@@ -46,10 +46,10 @@
             ],
             [
                 {"name": "other", "fullName": "Misc", "defaultValue": "true"},
-                {"name": "free stuff", "fullName": "🈶 Free Stuff", "defaultValue": "true"},
+                {"name": "free stuff", "fullName": "🆓 Free Stuff", "defaultValue": "true"},
                 {"name": "volunteering", "fullName": "♻️ Volunteering", "defaultValue": "true"},
                 {"name": "market", "fullName": "🛍️ Market", "defaultValue": "true"},
-                {"name": "transgender", "fullName": "🏳️‍⚧️ Transgender", "defaultValue": "true"},
+                {"name": "transgender", "fullName": "🏳️‍⚧️ Transgeder :3", "defaultValue": "true"},
                 {"name": "lgbtq", "fullName": "🏳️‍🌈 LGBTQ", "defaultValue": "true"},
                 {"name": "festival", "fullName": "🎪 Festival", "defaultValue": "true"},
                 {"name": "announcement", "fullName": "🗣️ Announcements!!!!", "defaultValue": "true"},
