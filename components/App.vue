@@ -418,6 +418,7 @@ const transformEventSourcesResponse = (eventSources: Ref<Record<string, any>>) =
           <td>
             <div class="blurb-text">
 DC Metro Area Community Calendar            </div>
+            <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/people/peo-1/peo99.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2005/12/13/peo99.html" target="_blank" title="Clown"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Clown" style="position:absolute; top: 0px; right: 0px;" /></a>
           </td>
         </tr>
       </tbody>
