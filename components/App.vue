@@ -411,24 +411,28 @@ const transformEventSourcesResponse = (eventSources: Ref<Record<string, any>>) =
 <template>
   <ModalsContainer />
   <div class="calendar-container">
-    <table style="width:100%;">
-      <tbody>
-        <tr>
-          <td class="blurb-image">
-            <img
-              :src="pngLogo"
-              alt="DMV DIY Logo"
-              style="width: 100%; height: 100%; object-fit: contain;"
-            />
-          </td>
-          <td>
-            <div class="blurb-text">
-              DC Metro Area Community Calendar
-            </div>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="logo-button-row">
+      <div class="logo-wrapper">
+        <img
+          :src="pngLogo"
+          alt="DMV DIY Logo"
+          class="logo-image"
+        />
+      </div>
+      <div class="submit-wrapper">
+        <a
+          href="https://form.jotform.com/dmvdiyfyi/dmv-diy-calendar-submission"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/css/dmvdiysubmitbutton.png"
+            alt="Submit Event"
+            class="submit-button-image"
+          />
+        </a>
+      </div>
+    </div>
     <div style="text-align: center;" v-if="beforeMOTDDate">
     </div>
     <FullCalendar ref="calendarRef" :options="calendarOptions" />
@@ -483,5 +487,42 @@ const transformEventSourcesResponse = (eventSources: Ref<Record<string, any>>) =
 <style>
 * {
   cursor: url(/public/css/peo99.cur), auto !important; 
+
+  .logo-button-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .logo-wrapper,
+  .submit-wrapper {
+    flex: 1;
+  }
+
+  .logo-image,
+  .submit-button-image {
+    width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+  }
+
+  .submit-button-image {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .submit-button-image:hover {
+    animation: shake 0.3s ease-in-out;
+  }
+
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-1px); }
+    50% { transform: translateX(1px); }
+    75% { transform: translateX(-1px); }
+    100% { transform: translateX(0); }
+  }
 }
 </style>
