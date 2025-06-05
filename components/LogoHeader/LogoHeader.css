@@ -1,36 +1,65 @@
 .logo-button-row {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: auto;
+  flex-wrap: wrap;
 }
 
 .logo-wrapper,
 .submit-wrapper {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.logo-wrapper {
+  flex: 2;
 }
 
 .logo-image,
 .submit-button-image {
-  width: 100%;
-  max-height: 80px;
+  height: 200px;
+  width: auto;
   object-fit: contain;
-}
-
-.submit-button-image {
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
 
 .submit-button-image:hover {
-  animation: shake 0.3s ease-in-out;
+  animation: shake 0.3s ease-in-out infinite;
 }
 
 @keyframes shake {
   0% { transform: translateX(0); }
-  25% { transform: translateX(-1px); }
-  50% { transform: translateX(1px); }
-  75% { transform: translateX(-1px); }
+  25% { transform: translateX(-2px); }
+  50% { transform: translateX(2px); }
+  75% { transform: translateX(-2px); }
   100% { transform: translateX(0); }
+}
+
+/* Stack below 768 (tablet size) */
+@media (max-width: 768px) {
+  .logo-button-column {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-wrapper,
+  .submit-wrapper {
+    flex: none;
+    width: 100%;
+    min-height: 160px;
+  }
+
+  .logo-image,
+  .submit-button-image {
+    height: 160px;
+  }
 }
