@@ -23,8 +23,4 @@
   </div>
 </template>
 
-<script setup lang="ts">
-defineProps<{ logoSrc: string }>();
-</script>
-
 <style scoped src="./LogoHeader.css" />
