@@ -1,31 +1,41 @@
-.logo-button-row {
+/* src/components/LogoHeader/LogoHeader.css */
+
+.logo-header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  height: auto;
-  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.logo-wrapper,
-.submit-wrapper {
-  flex: 1;
+/* Logo image */
+.logo-image {
+  height: 200px;          /* adjust as needed */
+  width: auto;
+  object-fit: contain;
+}
+
+/* Text under the logo */
+.logo-text {
+  margin-top: 0rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--text-normal);
+}
+
+/* Row of three submit buttons */
+.submit-buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: auto;
+  gap: 1rem;
+  margin-top: 0rem;
 }
 
-.logo-wrapper {
-  flex: 2;
-}
-
-.logo-image,
+/* Submit button images */
 .submit-button-image {
-  height: 200px;
+  height: 75px;          /* adjust as needed */
   width: auto;
   object-fit: contain;
   cursor: pointer;
@@ -33,33 +43,18 @@
 }
 
 .submit-button-image:hover {
-  animation: shake 0.3s ease-in-out infinite;
+  transform: translateY(-2px);
 }
 
-@keyframes shake {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(-2px); }
-  50% { transform: translateX(2px); }
-  75% { transform: translateX(-2px); }
-  100% { transform: translateX(0); }
-}
-
-/* Stack below 768 (tablet size) */
+/* Responsive tweaks */
 @media (max-width: 768px) {
-  .logo-button-column {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo-wrapper,
-  .submit-wrapper {
-    flex: none;
-    width: 100%;
-    min-height: 160px;
-  }
-
-  .logo-image,
-  .submit-button-image {
+  .logo-image {
     height: 160px;
+  }
+  .submit-button-image {
+    height: 80px;
+  }
+  .logo-text {
+    font-size: 1.25rem;
   }
 }
