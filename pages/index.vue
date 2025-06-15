@@ -17,8 +17,17 @@ useHead({
     },
   ],
 })
+
+const key = ref(0)
+const route = useRoute()
+
+watch(() => route.path, (newPath) => {
+  if (newPath === '/') {
+    key.value++
+  }
+})
 </script>
 
 <template>
-  <App />
+  <App :key="key" />
 </template>
