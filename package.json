@@ -27,7 +27,8 @@
     "luxon": "^3.4.4",
     "openai": "^4.26.0",
     "sanitize-html": "^2.12.1",
-    "vue-final-modal": "^4.5.3"
+    "vue-final-modal": "^4.5.3",
+    "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@types/dompurify": "^3.0.5",

@@ -1,3 +1,5 @@
+/* src/components/LogoHeader/LogoHeader.css */
+
 .header-c {
   display: flex;
   align-items: center;
@@ -12,6 +14,16 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.logo-link {
+  display: block;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.logo-link:hover {
+  animation: shake 0.8s ease-in-out infinite;
 }
 
 .logo {
@@ -36,6 +48,29 @@
   margin-top: 0.25rem;
   font-size: 1rem;
   color: var(--text-normal);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  color: var(--text-normal);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--text-accent, #007acc);
+  text-decoration: underline;
+}
+
+.nav-link.router-link-active {
+  font-weight: bold;
+  color: var(--text-accent, #007acc);
+}
+
+.separator {
+  color: var(--text-normal);
 }
 
 .buttons {
@@ -51,7 +86,7 @@
 }
 
 .btn:hover {
-  animation: shake 1s ease-in-out infinite;
+  animation: shake 0.8s ease-in-out infinite;
 }
 
 @keyframes shake {
@@ -75,6 +110,10 @@
   
   .text-block {
     text-align: center;
+  }
+  
+  .links {
+    justify-content: center;
   }
   
   .logo {
