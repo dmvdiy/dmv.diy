@@ -466,6 +466,8 @@ body.no-scroll {
   color: var(--text-normal);
   font-family:ChicagoFLF,Times New Roman,Georgia,serif;
   font-size:14px;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .event-headers {

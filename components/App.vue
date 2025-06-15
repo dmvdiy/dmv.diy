@@ -427,7 +427,7 @@ const transformEventSourcesResponse = (eventSources: Ref<Record<string, any>>) =
           At this moment we would like to focus on local DIY shows and events that provide a safe space for queer community. For best results please include as much of the following information as possible: Event title, date, location, time, entry fee or a flyer/link to the event.
         </p>
         <p>
-          The source code for this site was &apos;forked&apos; from <a href="https://rva.rip">rva.rip</a> and its sister sites
+          The source code for this site was 'forked' from <a href="https://rva.rip">rva.rip</a> and its sister sites
           <a href="https://anarchism.nyc">anarchism.nyc</a>, <a href="https://anarchism.boston">anarchism.boston</a>, and <a href="https://bay.lgbt">bay.lgbt</a>.
         </p>
         <p>

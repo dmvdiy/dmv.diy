@@ -18,13 +18,17 @@ useHead({
   ],
 })
 
-const key = ref(0)
+const key = ref(Date.now())
 const route = useRoute()
 
 watch(() => route.path, (newPath) => {
   if (newPath === '/') {
-    key.value++
+    key.value = Date.now()
   }
+})
+
+onMounted(() => {
+  key.value = Date.now()
 })
 </script>
 
