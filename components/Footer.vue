@@ -10,7 +10,7 @@ const switchTheme = (newTheme) => setTheme(newTheme);
 // if your initial setup already correctly handles this.
 onMounted(() => {
   const currentTheme = theme.value;
-  switchTheme('default');
+  switchTheme('dark');
   setTimeout(() => {
     switchTheme(currentTheme); // Re-apply the current theme to ensure UI consistency
   }, 0); // A delay of 0 ms still allows the event loop to process pending tasks

@@ -91,7 +91,7 @@ a {
 /* Window layout */
 
 .calendar-container {
-  height: 95vh;
+  height: auto !important;
 }
 
 fc-theme-standard td,
@@ -129,7 +129,7 @@ fc-theme-standard td,
 .fc .fc-popover,
 .popper-box-inner,
 .motd {
-  max-height: 90vh; /* Adjust the max height as needed */
+  max-height: 1000vh; /* Adjust the max height as needed */
   overflow-y: auto;
   z-index: 2;
   font-size: 12px;
@@ -466,6 +466,8 @@ body.no-scroll {
   color: var(--text-normal);
   font-family:ChicagoFLF,Times New Roman,Georgia,serif;
   font-size:14px;
+  max-height: 90vh;
+  overflow-y: auto;
 }
 
 .event-headers {

@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 useHead({
   title: 'dmv.diy',
   meta: [
@@ -18,8 +17,21 @@ useHead({
     },
   ],
 })
+
+const key = ref(Date.now())
+const route = useRoute()
+
+watch(() => route.path, (newPath) => {
+  if (newPath === '/') {
+    key.value = Date.now()
+  }
+})
+
+onMounted(() => {
+  key.value = Date.now()
+})
 </script>
 
 <template>
-  <App />
+  <App :key="key" />
 </template>
