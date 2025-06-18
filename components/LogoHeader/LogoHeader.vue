@@ -16,7 +16,9 @@
       </div>
     </div>
     <div class="buttons">
-      <img src="/css/dmvdiysubmitbutton.png" class="btn" />
+      <a href="https://form.jotform.com/dmvdiyfyi/dmv-diy-calendar-submission">
+        <img src="/css/dmvdiysubmitbutton.png" class="btn" />
+      </a>
     </div>
   </div>
 </template>
