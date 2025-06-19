@@ -91,7 +91,7 @@ a {
 /* Window layout */
 
 .calendar-container {
-  height: auto !important;
+  height: 95vh;
 }
 
 fc-theme-standard td,

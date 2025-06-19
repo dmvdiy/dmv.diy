@@ -176,7 +176,7 @@ calendarOptions.value = {
     list: 'list'
   },
   nowIndicator: true,
-  height: 'auto',
+  height: '100vh',
   dayMaxEventRows: updateDayMaxEventRows(),
   navLinks: true,
   weekNumbers: updateWeekNumbers(),
