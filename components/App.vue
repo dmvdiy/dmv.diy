@@ -442,16 +442,8 @@ const transformEventSourcesResponse = (eventSources: Ref<Record<string, any>>) =
             <li><a href="https://dmvmutualaid.carrd.co/">DMV Mutual Aid</a></li>
             <li><a href="https://dcurbangardenernetwork.wordpress.com/">DC Urban Gardener (DUG) Network</a></li>
             <li><a href="https://dctoollibrary.org/category/events/">DC Tool Library</a></li>
-            <li>
-              <a href="https://drive.google.com/drive/u/0/folders/1FZudPOQZAnYH1iQXNBkqF57GR0lcQMro?fbclid=PAAaZeYBkvvm9htFplB2hIY7O0lBfbDBuNxkc4tnSO_f1c7nRFHUQfHP82suc_aem_AfVwq4j54yxAD6L4h_Mo5bWsFtZ2xicf8eNQ9DZkxGgP7kmsUh0bnT8oufZX2gqjw08"
-                >Free Resource Library on Palestine</a
-              >
-            </li>
-            <li>
-              <a href="https://linktr.ee/dctransevents?fbclid=PAZXh0bgNhZW0CMTEAAaZXuVuariZKJa-utN5USQXT7HlfWG9P8IIA-YFtfpS6zhITp1WQYvt91Z8_aem_6tzkEwc9-q9SjyR3guLP-g"
-                >DC Trans Events (they have their own calendar!)</a
-              >
-            </li>
+            <li><a href="https://drive.google.com/drive/u/0/folders/1FZudPOQZAnYH1iQXNBkqF57GR0lcQMro?fbclid=PAAaZeYBkvvm9htFplB2hIY7O0lBfbDBuNxkc4tnSO_f1c7nRFHUQfHP82suc_aem_AfVwq4j54yxAD6L4h_Mo5bWsFtZ2xicf8eNQ9DZkxGgP7kmsUh0bnT8oufZX2gqjw08">Free Resource Library on Palestine</a></li>
+            <li><a href="https://linktr.ee/dctransevents?fbclid=PAZXh0bgNhZW0CMTEAAaZXuVuariZKJa-utN5USQXT7HlfWG9P8IIA-YFtfpS6zhITp1WQYvt91Z8_aem_6tzkEwc9-q9SjyR3guLP-g">DC Trans Events (they have their own calendar!)</a></li>
           </ul>
         </p>
       </div>
