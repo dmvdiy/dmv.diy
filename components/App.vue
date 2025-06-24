@@ -435,9 +435,6 @@ const transformEventSourcesResponse = (eventSources: Ref<Record<string, any>>) =
           affiliated with any events listed.
         </p>
         <p>
-          We are currently working on a resource page for local mutual aid groups that provide support and resources to DMV residents. Doing so in a manner that does not compromise the safety/privacy of the people doing this work is a priority to us. If you represent one of these groups that would like to be included in this list, we ask that you reach out to us directly.
-        </p>
-        <p>
           Links to other resources
           <ul style="line-height: 1.5em">
             <li><a href="https://www.rhizomedc.org/updates">Rhizome volunteer sign-ups</a></li>
