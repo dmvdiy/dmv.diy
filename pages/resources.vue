@@ -22,7 +22,7 @@ useHead({
         <a href="mailto:dmv.diy.fyi@gmail.com">dmv.diy.fyi@gmail.com</a> if you have recommendations to add!
       </p>
 
-      <h2>Independent Bookstores:</h2>
+      <h2>Independent Bookstores & Small Press:</h2>
       <ul>
         <li><a href="https://www.solidstatebooksdc.com/" target="_blank">Solid State Books</a></li>
         <li><a href="https://www.sankofa.com/" target="_blank">Sankofa Video, Books and Cafe</a></li>
@@ -33,6 +33,8 @@ useHead({
         <li><a href="https://www.jfbooks.org/about" target="_blank">JF Books</a> (specializes in Asian and Asian American works)</li>
         <li><a href="https://www.middleeastbooks.com/pages/about-us" target="_blank">Middle East Books and More</a></li>
         <li><a href="https://littledistrictbooks.com/pages/store-information" target="_blank">Little District Books</a> (specializes in LGBTQ+ works)</li>
+        <li><a href="https://stores.comichub.com/fantom_comics" target="_blank">Fantom Comics</a></li>
+        <li><a href="https://lilacperil.com/?fbclid=PAZXh0bgNhZW0CMTEAAadfUQGElrGS6fEhGe594Lx9TS-HrsazQ8SP9GEVF9IFCx20ykUujb7O2bMOjw_aem_YOR8iA4yK_roI1m5t0CCPg" target="_blank">Lilac Press</a> A DC-based publisher and literary journal that centers local trans authors and poets</li>
       </ul>
 
       <h2>Spaces that host queer-centered events:</h2>
@@ -49,7 +51,16 @@ useHead({
       <ul>
         <li><a href="https://linktr.ee/peoplesmediccollectivedmv" target="_blank">People’s Medic Collective</a></li>
         <li><a href="https://www.instagram.com/lacollectiva/" target="_blank">La CollectiVA</a></li>
+        <li><a href="https://www.instagram.com/foodnotbombsdc/" target="_blank">DC Food Not Bombs</a></li>
+        <li><a href="https://https://www.instagram.com/goodtroubleco.op/" target="_blank">Good Trouble Cooperative</a></li>
+        <li><a href="https://consistentmoneymoving.org/?fbclid=PAZXh0bgNhZW0CMTEAAacj_p6M4QcLo9J6NSnhYWZW471Gtpqm3M-9PtRI_H5d9xx5D2DZyowaEXkprA_aem_7nZDJv1KCgMrVL5yWeUTfg" target="_blank">Consistent Money Moving Project</a></li>
       </ul>
+
+      <h2>More to Explore:-))</h2>
+      <ul>
+        <li><a href="https://tpss.coop/" target="_blank">Takoma Park Silver Spring Co-op</a></li>
+        <li><a href="https://glut.org/" target="_blank">Glut Food Co-op</a></li>
+        
     </div>
     <Footer />
   </div>
