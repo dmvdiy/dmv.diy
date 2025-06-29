@@ -42,7 +42,7 @@ useHead({
         <li><a href="https://asyouaredc.com/" target="_blank">As You Are</a> – LGBTQ+ cafe and bar</li>
         <li><a href="https://thedccenter.org/" target="_blank">The DC Center</a> – LGBTQ+ community center</li>
         <li><a href="https://tradebardc.com/" target="_blank">Trade</a> – Gay bar and nightclub</li>
-        <li><a href="https://www.shakersdc.com/" target="_blank">Showtime Lounge</a> – Dyke Nites (Wednesdays)</li>
+        <li><a href="https://showtime-lounge.res-menu.com/" target="_blank">Showtime Lounge</a> – Dyke Nites (Wednesdays)</li>
         <li><a href="https://www.shakersdc.com/" target="_blank">Shakers</a> – hosts drag shows</li>
         <li><a href="https://pasttensestudio.com/" target="_blank">Past Tense Yoga Studio</a> – free monthly yoga for trans folks (registration required)</li>
       </ul>
@@ -52,7 +52,7 @@ useHead({
         <li><a href="https://linktr.ee/peoplesmediccollectivedmv" target="_blank">People’s Medic Collective</a></li>
         <li><a href="https://www.instagram.com/lacollectiva/" target="_blank">La CollectiVA</a></li>
         <li><a href="https://www.instagram.com/foodnotbombsdc/" target="_blank">DC Food Not Bombs</a></li>
-        <li><a href="https://https://www.instagram.com/goodtroubleco.op/" target="_blank">Good Trouble Cooperative</a></li>
+        <li><a href="https://www.instagram.com/goodtroubleco.op/" target="_blank">Good Trouble Cooperative</a></li>
         <li><a href="https://consistentmoneymoving.org/?fbclid=PAZXh0bgNhZW0CMTEAAacj_p6M4QcLo9J6NSnhYWZW471Gtpqm3M-9PtRI_H5d9xx5D2DZyowaEXkprA_aem_7nZDJv1KCgMrVL5yWeUTfg" target="_blank">Consistent Money Moving Project</a></li>
       </ul>
 
@@ -60,7 +60,7 @@ useHead({
       <ul>
         <li><a href="https://tpss.coop/" target="_blank">Takoma Park Silver Spring Co-op</a></li>
         <li><a href="https://glut.org/" target="_blank">Glut Food Co-op</a></li>
-        
+      </ul>
     </div>
     <Footer />
   </div>
