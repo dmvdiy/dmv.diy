@@ -11,7 +11,7 @@
           <span class="separator">|</span>
           <router-link to="/resources" class="nav-link">Resources</router-link>
           <span class="separator">|</span>
-          <a href="https://form.jotform.com/dmvdiyfyi/dmv-diy-calendar-submission" class="nav-link">Submit</a>
+          <a href="https://tally.so/r/3lGqpV" class="nav-link">Submit</a>
         </div>
       </div>
     </div>
