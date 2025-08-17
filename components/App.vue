@@ -420,7 +420,7 @@ const transformEventSourcesResponse = (eventSources: Ref<Record<string, any>>) =
         <p>
           This site is meant to be a free hub for community events and resources in the DMV area and is
           currently a work in progress. If you have an event you would like to include, or feedback on this
-          site, submit via <a href="https://form.jotform.com/dmvdiyfyi/dmv-diy-calendar-submission">this form</a> OR reach out to us at
+          site, submit via our form OR reach out to us at
           <a href="mailto:dmv.diy.fyi@gmail.com">dmv.diy.fyi@gmail.com</a>
         </p>
         <p>
