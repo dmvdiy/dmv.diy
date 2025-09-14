@@ -22,18 +22,21 @@ useHead({
         <a href="mailto:dmv.diy.fyi@gmail.com">dmv.diy.fyi@gmail.com</a> if you have recommendations to add!
       </p>
 
-      <h2>Independent Bookstores & Small Press:</h2>
+      <h2>Independent Bookstores, Small Press, Etc.:</h2>
       <ul>
         <li><a href="https://www.solidstatebooksdc.com/" target="_blank">Solid State Books</a></li>
         <li><a href="https://www.sankofa.com/" target="_blank">Sankofa Video, Books and Cafe</a></li>
         <li><a href="https://www.loyaltybookstores.com/meettheteam" target="_blank">Loyalty Books and Culture</a></li>
         <li><a href="https://www.mahoganybooks.com/" target="_blank">Mahogany Books</a></li>
+        <li><a href="https://pottershousedc.org/bookstore" target="_blank">The Potter's House Books</a></li>
+        <li><a href="https://www.bol.coop/" target="_blank">Bol Co-Op</a> DC's first worker owned bookstore!</li>
         <li><a href="https://lostcitybookstore.com/" target="_blank">Lost City Books</a></li>
         <li><a href="https://peoplesbooktakoma.com/" target="_blank">The People’s Book</a></li>
         <li><a href="https://www.jfbooks.org/about" target="_blank">JF Books</a> (specializes in Asian and Asian American works)</li>
         <li><a href="https://www.middleeastbooks.com/pages/about-us" target="_blank">Middle East Books and More</a></li>
         <li><a href="https://littledistrictbooks.com/pages/store-information" target="_blank">Little District Books</a> (specializes in LGBTQ+ works)</li>
         <li><a href="https://stores.comichub.com/fantom_comics" target="_blank">Fantom Comics</a></li>
+        <li><a href="https://sunscinema.com/" target="_blank">Sun's Cinema</a> (independent movie theater and bar)</li>
         <li><a href="https://lilacperil.com/?fbclid=PAZXh0bgNhZW0CMTEAAadfUQGElrGS6fEhGe594Lx9TS-HrsazQ8SP9GEVF9IFCx20ykUujb7O2bMOjw_aem_YOR8iA4yK_roI1m5t0CCPg" target="_blank">Lilac Press</a> A DC-based publisher and literary journal that centers local trans authors and poets</li>
       </ul>
 
