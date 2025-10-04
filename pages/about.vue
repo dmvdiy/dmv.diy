@@ -43,10 +43,10 @@ useHead({
         All of our events are posted to the site manually, even though this process can be time-intensive. We do not support the use of AI (re: event “scraping”, flyers) on this site for the following reasons:
       </p>
       <ul>
-        <li>- AI does not create anything new, it only regenerates</li>
-        <li>- Its output is based on low-paid labor overseas</li>
-        <li>- AI is extractive and  <a href="https://capitalbnews.org/ai-data-centers-south-carolina-black-communities/" target="_blank">has real life consequences for historically marginalized communities</a> who are much more likely to suffer its externalities due to longtime racial planning policies</li>
-        <li>- Environmental footprint</li>
+        <li>AI does not create anything new, it only regenerates</li>
+        <li>Its output is based on low-paid labor overseas</li>
+        <li>AI is extractive and  <a href="https://capitalbnews.org/ai-data-centers-south-carolina-black-communities/" target="_blank">has real life consequences for historically marginalized communities</a> who are much more likely to suffer its externalities due to longtime racial planning policies</li>
+        <li>Environmental footprint</li>
       </ul>
       <p>
         In summary, while we could concede that AI has utility, the risks/costs associated with AI far outweighs its utility to save time on simple tasks. 
