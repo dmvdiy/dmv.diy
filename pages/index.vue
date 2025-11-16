@@ -9,7 +9,10 @@ useHead({
       content: '',
     },
   ],
-  link: [{ rel: 'icon', type: 'image/png', href: '/css/favicon.png' }],
+  link: [
+    { rel: 'icon', type: 'image/png', href: '/css/favicon.png' },
+    { rel: 'alternate', type: 'application/rss+xml', title: 'dmv.diy RSS Feed', href: '/feed.xml' }
+  ],
   script: [
     {
       src: 'https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=default%2Ces2015%2Ces6%2Ces5',
