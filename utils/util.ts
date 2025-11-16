@@ -20,7 +20,6 @@ export const eventDayDurationSplitThreshold = 3;
 
 //Badge stuff
 import { badgeMap } from '../server/badgeMap';
-import DOMPurify from 'dompurify';
 export const replaceBadgePlaceholders = (text: string): string => {
 	return text.replace(/:\w+:/g, (match) => badgeMap[match] || match);
   };
