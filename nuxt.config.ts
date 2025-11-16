@@ -47,4 +47,34 @@ export default defineNuxtConfig({
   },
   plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
   css: ["vue-final-modal/style.css"],
+
+  // Vite build optimizations
+  vite: {
+    build: {
+      // Minification
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+          drop_debugger: true,
+        },
+      },
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'vendor-calendar': ['@fullcalendar/core', '@fullcalendar/vue3', '@fullcalendar/daygrid', '@fullcalendar/timegrid', '@fullcalendar/list'],
+            'vendor-utils': ['luxon', 'jquery', 'sanitize-html'],
+          },
+        },
+      },
+      chunkSizeWarningLimit: 1000,
+    },
+  },
+
+  // Enable production optimizations
+  experimental: {
+    payloadExtraction: false,
+  },
+
+  components: true,
 });

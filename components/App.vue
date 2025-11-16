@@ -66,6 +66,9 @@ const updateWeekNumbers = () => {
 // -1 indicates that there is no limit.
 const updateDayMaxEventRows = () => { return isUsingDayMaxEventRows.value ? -1 : Math.floor(getWindowHeight() / 75) };
 
+// Use useState to persist event sources across navigation
+const persistedEventSources = useState<EventSourceInput[]>('calendar-event-sources', () => [])
+
 const calendarOptions = ref<CalendarOptions | undefined>()
 
 const disabledEventSources = new Map<string, EventSourceInput>()
@@ -180,7 +183,7 @@ calendarOptions.value = {
   dayMaxEventRows: updateDayMaxEventRows(),
   navLinks: true,
   weekNumbers: updateWeekNumbers(),
-  eventSources: [],
+  eventSources: persistedEventSources.value,
 
   eventClick: function (event) {
     event.jsEvent.preventDefault(); // Prevent the default behavior of clicking a link
@@ -279,6 +282,11 @@ function moveListViewScrollbarToTodayAndColor(retryCount = 5) {//Default retry c
 }
 
 async function getEventSources() {
+  // Skip fetching if we already have persisted event sources (navigating back)
+  if (persistedEventSources.value.length > 0) {
+    return;
+  }
+
   const endpoints = eventSourcesJSON.appConfig.eventApiToGrab;
   const clientHeaders = {
     'Cache-Control': `max-age=${clientCacheMaxAgeSeconds}, stale-while-revalidate=${clientStaleWhileInvalidateSeconds}`,
@@ -377,9 +385,13 @@ function addEventSources(newEventSources: EventNormalSource[] | EventGoogleCalen
   });
   // Issue: might take a long time to actually update the calendar if the list of, for example, Eventbrite events/sources is large.
 
+  // Update both persisted state and calendar options
+  const updatedEventSources = calendarOptions.value?.eventSources?.concat(newEventSources) || newEventSources;
+  persistedEventSources.value = updatedEventSources;
+
   calendarOptions.value = {
     ...calendarOptions.value,
-    eventSources: calendarOptions.value?.eventSources?.concat(newEventSources)
+    eventSources: updatedEventSources
   };
 
   return calendarOptions.value

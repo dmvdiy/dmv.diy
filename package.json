@@ -7,7 +7,6 @@
     "dev": "nuxt dev",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "prisma-generate": "prisma generate",
     "clear-cache": "rm -rf .nuxt",
     "clear-cache:win": "powershell -Command \"if (Test-Path .nuxt) { Remove-Item -Recurse -Force .nuxt }\""
   },
@@ -17,28 +16,22 @@
     "@fullcalendar/list": "^6.1.10",
     "@fullcalendar/timegrid": "^6.1.10",
     "@fullcalendar/vue3": "^6.1.10",
-    "@google-cloud/vision": "^4.2.0",
-    "@prisma/client": "^4.16.2",
     "@vercel/analytics": "^0.1.11",
-    "axios": "^1.7.5",
-    "dompurify": "^3.0.8",
     "jquery": "^3.7.1",
     "jsdom": "^21.1.2",
     "luxon": "^3.4.4",
-    "openai": "^4.26.0",
     "sanitize-html": "^2.12.1",
     "vue-final-modal": "^4.5.3",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@types/dompurify": "^3.0.5",
     "@types/jquery": "^3.5.29",
     "@types/jsdom": "^21.1.6",
     "@types/luxon": "^3.4.2",
     "@types/node": "^18.19.14",
     "nuxt": "^3.12.4",
     "nuxt-security": "^0.14.4",
-    "prisma": "^4.16.2",
+    "terser": "^5.36.0",
     "typescript": "^4.9.5"
   }
 }
