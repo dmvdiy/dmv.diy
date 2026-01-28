@@ -32,7 +32,7 @@ useHead({
         Social media like Instagram and Facebook have long served as a useful medium for sharing events and interacting with community, but the rise in surveillance on these platforms and Meta's role in supporting the further erosion of our rights makes it necessary for communities to create their own open-source alternatives.
       </p>
       <p>
-        Our ethos is rooted in the desire for a free and decentralized internet. For more info on what this means, we would encourage you to look at the resources provided by the <a href="https://www.eff.org/" target="_blank">Electronic Frontier Foundation</a>.
+        Our ethos is rooted in the desire for a free internet in which data about our everyday lives is not fed into building out the infrastructure of surveillance and carceral systems.
       </p>
       <p>
         This site is meant to function as an evergreen version of the physical message boards (they still exist!) at coffee shops and community hubs. Currently, we accept events on a submissions basis, but we have the capacity to add additional calendars to our site to be maintained by others. Our calendar is based on Google API due to lack of a better alternative (let us know if you find one…)
@@ -40,7 +40,7 @@ useHead({
 
       <h2>Stance on AI</h2>
       <p>
-        All of our events are posted to the site manually, even though this process can be time-intensive. We do not support the use of AI (re: event “scraping”, flyers) on this site for the following reasons:
+        All of our events are posted to the site manually, even though this process can be time-intensive. We do not support the use of generative AI or data scraping on this site for the following reasons:
       </p>
       <ul>
         <li>AI does not create anything new, it only regenerates</li>
