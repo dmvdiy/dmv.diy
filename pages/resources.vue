@@ -72,7 +72,7 @@ useHead({
         <li><a href="https://cdcellarva.com/" target="_blank">CD Cellar</a> - Falls Church</li>
         <li><a href="https://www.mobiusrecordshop.com/about" target="_blank">Mobius Records</a> - Fairfax</li>
         <li><a href="https://www.sonidosmusicshop.com/about" target ="_blank">Sonidos! Music & More</a> - Beltsville</li>
-        <li><a href="https://www.redonionrecords.com/" target="_blank">Shady Lane Records (formerly Red Onion)</a> - Hyattsville (personal favorite PLUS Josh is so nice, hi Josh!)</li>
+        <li><a href="https://www.redonionrecords.com/" target="_blank">Shady Lane Records (formerly Red Onion)</a> - Hyattsville</li>
         <li><a href="https://www.instagram.com/dinosaurpancakemusic/" target="_blank">Dinosaur Pancake</a> - Hyattsville</li>
         <li><a href="https://www.youtube.com/watch?v=hDd2G_V1rzc" target="_blank">Obligatory RIP to Record Exchange, CDepot</a></li>
       </ul>
