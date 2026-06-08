@@ -34,7 +34,7 @@ function createGoogleMapsURL(location) {
 }
 
 const getImageUrls = () => {
-  return eventImages.slice(0,3);
+  return eventImages.slice(0,3).map(url => `/api/fetchImage?url=${encodeURIComponent(url)}`);
 };
 
 let errorMessages = ref([]); // To store error messages relating to image display
