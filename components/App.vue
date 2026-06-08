@@ -426,7 +426,8 @@ const transformEventSourcesResponse = (eventSources: Ref<Record<string, any>>) =
           This site is meant to be a free hub for community events and resources in the DMV area and is
           currently a work in progress. If you have an event you would like to include, or feedback on this
           site, submit via our form OR reach out to us at
-          <a href="mailto:dmv.diy.fyi@gmail.com">dmv.diy.fyi@gmail.com</a>
+          <a href="mailto:dmv.diy.fyi@gmail.com">dmv.diy.fyi@gmail.com</a>. An RSS feed of events is available at /rss.
+
         </p>
         <p>
           At this moment we would like to focus on local DIY shows and events that provide a safe space for queer community. For best results please include as much of the following information as possible: Event title, date, location, time, entry fee or a flyer/link to the event.

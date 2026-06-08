@@ -29,6 +29,11 @@ export default defineEventHandler(async (event) => {
         hour: '2-digit', minute: '2-digit', timeZone: 'America/New_York'
       });
       const description = [dateStr, e.location, '', stripHtml(e.description)].filter(Boolean).join('\n').trim();
+
+      const enclosure = e.images?.[0]
+        ? `    <enclosure url="${escapeXml(e.images[0])}" type="image/jpeg" length="0"/>`
+        : '';
+
       return `
   <item>
     <title>${escapeXml(e.title)}</title>
@@ -36,7 +41,7 @@ export default defineEventHandler(async (event) => {
     <guid isPermaLink="false">${escapeXml(e.id)}</guid>
     <pubDate>${start.toUTCString()}</pubDate>
     <description><![CDATA[${description}]]></description>
-    ${e.location ? `<category>${escapeXml(e.location)}</category>` : ''}
+${enclosure}
   </item>`;
     })
     .join('');
@@ -46,9 +51,10 @@ export default defineEventHandler(async (event) => {
   <channel>
     <title>DMV DIY Community Calendar</title>
     <link>${origin}</link>
-    <atom:link href="${origin}/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="${origin}/rss" rel="self" type="application/rss+xml"/>
     <description>Community events in the DC Metro Area</description>
     <language>en-us</language>
+    <ttl>60</ttl>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     ${items}
   </channel>
