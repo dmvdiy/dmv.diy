@@ -1,6 +1,9 @@
 import { H3Event } from "h3";
 import axios from "axios";
 
+const MAX_SIZE = 5 * 1024 * 1024;
+const requestHeaders = { 'User-Agent': 'Mozilla/5.0 (compatible; DMV-DIY/1.0)' };
+
 export default eventHandler(async (event: H3Event) => {
   const { url } = getQuery(event);
 
@@ -11,34 +14,37 @@ export default eventHandler(async (event: H3Event) => {
     });
   }
 
-  // Check the size of the image before fetching it
-  const sizeResponse = await axios.head(url);
-  const size = sizeResponse.headers["content-length"];
-
-  // If the size exceeds the limit (such as 5 MB), return an error
-  if (size > 5 * 1024 * 1024) {
-    throw createError({
-      statusCode: 413,
-      statusMessage: "The specified image is too large.",
-    });
+  // Try HEAD to check size before fetching
+  try {
+    const sizeResponse = await axios.head(url, { headers: requestHeaders });
+    const size = Number(sizeResponse.headers["content-length"]);
+    if (size && size > MAX_SIZE) {
+      throw createError({
+        statusCode: 413,
+        statusMessage: "The specified image is too large.",
+      });
+    }
+  } catch (e: any) {
+    if (e?.statusCode === 413) throw e;
+    // HEAD failed (405, network issue, etc.) — skip size pre-check and proceed to GET
   }
 
-  const response = await axios.get(url, { responseType: "arraybuffer" });
+  const response = await axios.get(url, {
+    responseType: "arraybuffer",
+    headers: requestHeaders,
+    maxContentLength: MAX_SIZE,
+  });
 
-  // Ensure mime type of the response content will be an image
   const type = response.headers["content-type"];
-  if (!type.startsWith("image/")) {
+  if (!type?.startsWith("image/")) {
     throw createError({
       statusCode: 400,
       statusMessage: "Specified URL does not point to an image.",
     });
   }
 
-  // Set appropriate headers and return an image response
   setHeader(event, "content-type", type);
-
-  // Add caching headers
-  setHeader(event, "Cache-Control", "public, max-age=31536000, immutable"); // Cache for a year and don't revalidate
+  setHeader(event, "Cache-Control", "public, max-age=31536000, immutable");
 
   return Buffer.from(response.data, "binary");
 });

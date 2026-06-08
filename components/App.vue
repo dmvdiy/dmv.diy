@@ -35,8 +35,6 @@ watch(theme, () => {
     });
   });
 });
-const pngLogo = ref('');
-
 const getWindowHeight = () => {
   if (process.client) return window.innerHeight;
   return 600;
@@ -309,11 +307,6 @@ onMounted(() => {
   moveListViewScrollbarToTodayAndColor();
   // Expose the calendar instance to the window object for debugging
   if (calendarRef.value) window.myCalendar = calendarRef.value.getApi();
-  // for the logo
-  async function fetchLogo() {
-    pngLogo.value = '/css/dmvdiylogo.png'
-  }
-  fetchLogo();
 });
 onUpdated(() => {
 });
@@ -466,6 +459,6 @@ const transformEventSourcesResponse = (eventSources: Ref<Record<string, any>>) =
 
 <style>
 * {
-  cursor: url(/public/css/peo99.cur), auto !important; 
+  cursor: url(/css/peo99.cur), auto !important;
 }
 </style>

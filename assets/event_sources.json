@@ -55,10 +55,7 @@
             ]
         ],
         "eventApiToGrab": [
-            "/api/events/googleCalendar",
-            "/api/events/squarespace",
-            "/api/events/elfsight",
-            "/api/events/libcal"
+            "/api/events/googleCalendar"
           ]
     },
     "googleCalendar": [
