@@ -33,10 +33,8 @@ function createGoogleMapsURL(location) {
   return googleMapsURL;
 }
 
-// Function to extract image urls from the eventDescription and construct a new URL
-// pointing towards your serverless function
 const getImageUrls = () => {
-  return eventImages.slice(0,3).map(url => `/api/fetchImage?url=${encodeURIComponent(url)}`);
+  return eventImages.slice(0,3);
 };
 
 let errorMessages = ref([]); // To store error messages relating to image display
