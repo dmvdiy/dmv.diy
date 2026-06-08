@@ -17,7 +17,6 @@
     "@fullcalendar/timegrid": "^6.1.10",
     "@fullcalendar/vue3": "^6.1.10",
     "jquery": "^3.7.1",
-    "jsdom": "^21.1.2",
     "luxon": "^3.4.4",
     "sanitize-html": "^2.12.1",
     "vue-final-modal": "^4.5.3",
@@ -25,7 +24,6 @@
   },
   "devDependencies": {
     "@types/jquery": "^3.5.29",
-    "@types/jsdom": "^21.1.6",
     "@types/luxon": "^3.4.2",
     "@types/node": "^18.19.14",
     "nuxt": "^3.12.4",
