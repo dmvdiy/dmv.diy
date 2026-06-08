@@ -45,8 +45,7 @@ export default defineNuxtConfig({
       route: "",
     },
   },
-  plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }],
-  css: ["vue-final-modal/style.css"],
+css: ["vue-final-modal/style.css"],
 
   // Vite build optimizations
   vite: {
